@@ -1,8 +1,9 @@
 import * as XLSX from "xlsx"
 
 // Status values to EXCLUDE from calculations (Column K)
+// "comercial" agora é CONSIDERADO (removido da lista de exclusão)
+// Apenas: logistica, qualidade, expedição, finalizada e #N/D são excluídos
 const EXCLUDED_STATUS = [
-  "comercial",
   "logistica",
   "logística",
   "qualidade",
